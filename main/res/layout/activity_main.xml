@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="67dp">
+
+
+    </WebView>
+
+    <Button
+        android:id="@+id/rfbtn"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/visiteWeb"
+        android:onClick="refresh"
+        android:text="Refresh" />
+
+    <Button
+        android:id="@+id/visiteWeb"
+        android:layout_width="146dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:onClick="visitWeb"
+        android:text="Visit Website" />
+
+    <Button
+        android:id="@+id/abtMe"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="abtMe"
+        android:text="About Us" />
+
+</RelativeLayout>
